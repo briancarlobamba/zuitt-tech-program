@@ -1,0 +1,77 @@
+/*CSS Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Quicksand", sans-serif;
+}
+
+nav {
+	padding: 0.8rem;
+	margin-bottom: 2rem;
+	border-bottom: 1px solid gray;
+	list-style-type: none;
+}
+
+nav .nav, nav .nav-logo {
+	margin: 0.5rem;
+	display: inline;
+}
+
+#intro {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+
+	/*shorthand property*/
+	/*padding: top right bottom left;*/
+		/*1 value = all sides*/
+		/*2 values = top and bottom + left and right*/
+		/*3 values = top + right and left + bottom*/
+		/*4 values = top + right + bottom + left*/
+
+	text-align: center;
+}
+
+.header {
+	text-align: center;
+}
+
+#into h2, #intro p {
+	margin-bottom: 1rem;
+}
+
+#intro button {
+	color: floralwhite;
+	font-weight: bold;
+	background-color: deeppink;
+	border-radius: 25px;
+	font-size: 1rem;
+	padding: 1rem;
+}
+
+#succeed-info {
+	padding: 2rem 10% 3rem;
+}
+
+#succeed-info h2 {
+	margin-bottom: 1rem;
+}
+
+#succeed-info h3 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+#succeed-info .card {
+	display: inline-block;
+	vertical-align: top;
+	min-height: 175px;
+	width: 30%;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}

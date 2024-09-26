@@ -1,0 +1,149 @@
+#div-3 {
+	background-color: skyblue;
+	border:  2px solid black;
+	height: 200px;
+	width: 200px;
+	display: inline;
+}
+
+#div-4 {
+	background-color: aquamarine;
+	border: 2px solid black;
+	height: 200px;
+	width: 200px;
+	display: inline;
+}
+
+#span-3 {
+	background-color: gray;
+	border: 2px solid black;
+	display: block;
+
+}
+
+#span-4 {
+	background-color: rosybrown;
+	border: 2px solid black;
+	display: block;
+}
+
+#span-5 {
+	background-color: yellow;
+	border: 2px solid black;
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+}
+
+#span-6 {
+	background-color: orange;
+	border: 2px solid black;
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+}
+
+#div-5 {
+	background-color: pink;
+	border: 2px solid black;
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+}
+
+#div-6 {
+	background-color: violet;
+	border: 2px solid black;
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+}
+
+#div-7 {
+	background-color: red;
+	border: 2px solid black;
+
+}
+
+#div-8 {
+	background-color: lightcyan;
+	border: 2px solid black;
+	display: none;
+}
+
+#span-7 {
+	background-color: lightgreen;
+	border: 2px solid black;
+}
+
+.box {
+	background-color: pink;
+	border: 1px solid black;
+	margin: 5px;
+}
+
+.fifty-percent {
+	width: 50%;
+}
+
+.one-hundred-pixels {
+	width: 100px;
+}
+
+.parent {
+	width: 135px;
+	border: 2px solid navy;
+	font-size: 30px;
+}
+
+.fifty-vw {
+	width: 50vw;
+}
+
+.twenty-five-vh {
+	height: 25vh;
+}
+
+.one-rem {
+	font-size: 1rem;
+}
+
+.one-em {
+	font-size: 1em;
+}
+
+.two-rem {
+	font-size: 2rem;
+}
+
+.two-em {
+	font-size: 2em;
+}
+
+.two-hundred-percent {
+	font-size: 200%;
+}
+
+.background {
+	min-height: 200vh;
+	background-color: gray;
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/43/1003/707/anime-your-name-kimi-no-na-wa-mitsuha-miyamizu-wallpaper-preview.jpg);
+	background-repeat: no-repeat;
+	/*auto, cover, contain*/
+	background-size: 100%;
+	background-position: center bottom;
+	background-attachment: fixed;
+}
+
+.bg-title {
+	color: white;
+	text-align: center;
+	font-size: 5em;
+	margin: 0;
+	line-height: 35rem;
+}
+
+.container-bg {
+	background-color: rgba(0, 0, 0, 0.5);
+	min-height: 100%;
+}

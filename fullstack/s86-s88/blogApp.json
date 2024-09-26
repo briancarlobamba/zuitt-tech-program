@@ -1,0 +1,8 @@
+{
+    "url": "https://blog-app-two-jade-56.vercel.app/",
+    "endpoints": {
+        "register": "/register",
+        "login": "/login",
+        "posts": "/posts"
+    }
+}

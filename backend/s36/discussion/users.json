@@ -1,0 +1,233 @@
+// CRUD - Create, Read, Update, Delete
+
+	// Create
+
+		// to change database, use ("use")
+		// insertOne() || insertMany()
+
+			/*
+				- used to insert one || used to insert many
+
+				Syntax:
+					db.collectionName.insertOne/insertMany({object})
+
+					db.collectionName.insertMany([{object}, {object}])
+			*/
+
+			db.users.insertOne({
+				firstName: "Jane",
+				lastName: "Doe",
+				age: 21,
+				contact: {
+					phone: "87654321",
+					email: "janedoe@gmail.com",
+				},
+				courses: ["CSS", "JavaScript", "Python"],
+				department: "none"
+			});
+
+
+			db.users.insertMany([
+				{
+					firstName: "Stephen",
+					lastName: "Hawking",
+					age: 76,
+					contact: {
+						phone: "87654321",
+						email: "stephenhawking@gmail.com"
+					},
+					courses: ["Python", "React", "PHP"],
+					department: "none"
+				},
+							{
+					firstName: "Neil",
+					lastName: "Armstrong",
+					age: 82,
+					contact: {
+						phone: "87654321",
+						email: "neilarmstrong@gmail.com"
+					},
+					courses: ["React", "Laravel", "Sass"],
+					department: "none"
+				},
+			])
+
+
+	// Read/Finding Documents
+
+		// findOne() || find()
+
+			/*
+				Syntax:
+				db.collection.findOne/find({field: value});
+			*/
+
+			db.users.findOne();
+
+			db.users.findOne({firstName: "Stephen"});
+
+			db.users.find({department: "none", age: 82}); //having multiple parameters to add specificity
+
+	// Update
+
+		// updateOne() | updateMany()
+
+			/*
+				Syntax:
+				db.collectionName.updateOne({fieldA: valueA}, {$set: {fieldB: valueB}});
+			*/
+
+			db.users.insertOne({
+				firstName: "Test",
+				lastName: "Test",
+				age: 0,
+				contact: {
+					phone: "00000000",
+					email: "test@gmail.com",
+				},
+				courses: [],
+				department: "none"
+			});
+
+			db.users.updateOne(
+				{firstName: "Test"},
+				{
+					$set: {
+						firstName: "Bill",
+						lastName: "Gates",
+						age: 65,
+						contact: {
+							phone: "12345678",
+							email: "bill@gmail.com",
+						},
+						courses: ["PHP", "Laravel", "HTML"],
+						department: "Operations",
+						status: "active"
+					}
+				}
+				)
+
+			db.users.updateMany(
+				{department: "none"},
+				{
+					$set: {
+						department: "HR"
+					}
+				}
+				)
+
+
+	// Comparison Query Operators
+
+		// Greater than (gt) || Greatan or equal (gte)
+
+			/*
+				Syntax:
+					db.collectionName.find({field: {$gt/$gte: value}});
+			*/
+
+			db.users.find({age: {$gt: 50}});
+			db.users.find({age: {$gte: 50}});
+
+		// Less than (lt) || Less than or equal (lte)
+
+			/*
+				Syntax:
+					db.collectionName.find({field: {$lt/$lte: value}});
+			*/
+
+			db.users.find({age: {$lt: 50}});
+			db.users.find({age: {$lte: 50}});
+
+		// Not equal operator (ne)
+
+			/*
+				Syntax:
+					db.collectionName.find({field: {$ne: value}});
+			*/
+
+			db.users.find({age: {$ne: 82}});
+
+		// In operator (in)
+
+			/*
+				Syntax:
+					db.collectionName.find({field: {$in: [value, value]}});
+			*/
+
+			db.users.find({lastName: {$in: ["Hawking", "Doe"]}});
+			db.users.find({courses: {$in: ["HTML", "React"]}});
+
+		// Or operator (or)
+
+			/*
+				Syntax:
+					db.collectionName.find({$or: [{fieldA: valueA}, {fieldB: valueB}]});
+			*/
+
+			db.users.find({$or: [{firstName: "Neil"}, {age: 25}]});
+			db.users.find({$or: [{firstName: "Neil"}, {age: {$gt: 30}}]});
+
+	// Field Projection
+
+		// Inclusion (1) || Exclusion (0)
+
+			/*
+				Syntax:
+				db.collectionName.find({criteria}, {field: 1/0})
+			*/
+
+			db.users.find(
+				{
+					firstName: "Jane"
+				},
+				{
+					firstName: 1,
+					lastName: 1,
+					contact: 1
+				}
+				);
+
+			db.users.find(
+				{
+					firstName: "Jane"
+				},
+				{
+					contact: 0,
+					courses: 0
+				}
+				);
+
+			db.users.find(
+				{
+					firstName: "Jane"
+				},
+				{
+					firstName: 1,
+					lastName: 1,
+					_id:0
+				}
+				);
+
+
+// Evaluation Query Operators
+	
+	// Regex Operator
+
+		/*
+			- allows us to find documents that match a regular expression
+
+			Syntax:
+				db.collectionName.find({field: $regex: "pattern", $options: optionValue});
+
+		*/
+
+		// case sensitive query
+
+			db.users.find({firstName: {$regex: "N"}});
+
+		// case insensitive query
+
+			db.users.find({firstName: {$regex: "j", $options: "i"}});
+
+

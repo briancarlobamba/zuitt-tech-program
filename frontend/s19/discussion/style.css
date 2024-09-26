@@ -1,0 +1,69 @@
+#logo {
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 24px;
+	/*text-align: left;*/
+	color: #003363;
+}
+
+nav a {
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	/*text-align: left;*/
+	color: #004E84 !important;
+}
+
+#title {
+	font-family: Montserrat;
+	font-size: 68px;
+	font-weight: 700;
+	line-height: 84px;
+	/*text-align: center;*/
+	color: #FFFFFF;
+}
+
+#base {
+	background-color: #12C6FF;
+	border-radius: 2px;
+	padding: 8px 24px 8px 24px;
+
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 24px;
+	/*text-align: center;*/
+	color: #FFFFFF;
+}
+
+#landing {
+	background: linear-gradient(
+		rgba(0, 34, 65, 0.61),
+		rgba(0, 34, 65, 0.61)
+	), 
+	url("./images/banner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#about-me {
+	background: rgba(0, 51, 99, 1);
+	color: rgba(255, 255, 255, 1);
+}
+
+#about-me h4 {
+	color: #12C6FF;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32px;
+}
+
+#about-me p {
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+}

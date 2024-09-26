@@ -1,0 +1,27 @@
+Notes for CLI - Command Line Interface Commands:
+
+GUI is a graphical representation in which the users can interact with software or devices through clickable icons
+
+CLI is a console or text-based represenration which a user types commands in a terminal
+
+pwd - present working directory - shows the current folder we are working on
+
+ls - list the files and folders contained by the current directory
+
+mkdir <folderName> - creates a new directory
+
+cd <folderName> - change directories
+
+touch <fileName> - used to create files
+
+cd - (go back one directory)
+
+cd .. - (one folder up)
+
+rm <name of the file> - to delete file 
+
+rmdir <name of the folder> - to delete an empty directory
+
+rm -r <directory_name> - This command will remove the specified directory and its contents recursively. It will prompt you for confirmation before deleting each file.
+
+rm -rf <directory_name> - This command will forcefully remove the specified directory and its contents without any confirmation prompts. Use this with caution, as it does not provide a chance to recover deleted data.

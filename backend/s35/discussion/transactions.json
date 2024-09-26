@@ -1,0 +1,17 @@
+{
+    "_id": "6062a8eb834de22e84600edd",
+    "userId": "507f1f77bcf86cd799439011",
+    "courseId": "601ccbe89bcd482ee8fa2c99",
+    "isPaid": true,
+    "paymentMethod": "PayPal",
+    "datetimeCreated": "2020-03-12T15:00:00.00Z"
+}
+
+{
+    "_id": "603e10d3b30fd23b081a94eb",
+    "userId": "507f1f77bcf86cd799439011",
+    "courseId": "507f191e810c19729de860ea",
+    "isPaid": true,
+    "paymentMethod": "American Express - Credit",
+    "datetimeCreated": "2020-03-12T15:00:00.00Z"
+}

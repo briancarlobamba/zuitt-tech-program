@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Tables and Forms</title>
+</head>
+<body>
+
+	<div>	
+
+		<h2>HTML Entities</h2>
+		<p><em>Reserved characters in HTML (e.g. &lt; or &gt; characters that can mix up with HTML code).</em></p>
+
+	</div>
+
+	<div id="table">
+		
+		<!-- HTML Table -->
+		<table border="1">
+			
+			<!-- table header -->
+			<thead>				
+				<!-- table row -->
+				<tr>
+					<!-- table header element -->
+					<th colspan="2">Entity</th>
+					<th>Description</th>					
+				</tr>
+			</thead>
+
+			<!-- table body -->
+			<tbody>				
+				<tr>
+					<td>&lt;</td>
+					<td>lt</td>
+					<td>less than</td>
+
+				</tr>
+
+				<tr>
+					<td>&gt;</td>
+                    <td>gt</td>
+                    <td>greater than</td>
+                </tr>
+
+                <tr>
+                    <td>&#8369;</td>
+                    <td>#8369</td>
+                    <td>peso sign</td>
+               </tr>
+
+               <tr>
+                    <td>&amp;</td>
+                    <td>amp</td>
+                    <td>ampersand</td>
+				</tr>
+
+				<tr>
+                    <td>&quot;</td>
+                    <td>quot</td>
+                    <td>double quotation mark</td>
+                </tr>
+
+                <tr>
+                    <td>&apos;</td>
+                    <td>apos</td>
+                    <td>single quotation mark (apostrophe)</td>
+                </tr>
+
+                <tr>
+                    <td>&ntilde;</td>
+                    <td>ntilde</td>
+                    <td>Lower Tilde</td>
+                </tr>
+
+                <tr>
+                    <td>&Ntilde;</td>
+                    <td>Ntilde</td>
+                    <td>Upper Tilde</td>
+                </tr>
+
+			</tbody>
+
+			<!-- footer -->
+			<tfoot>
+				<tr>
+					<th colspan="3">List of HTML Entities</th>
+				</tr>
+			</tfoot>
+
+		</table>
+
+	</div>
+
+	<div id="form">
+
+		<h2>HTML Forms</h2>
+		<p><em>Input elements that make up a form</em></p>
+
+		<!-- HTML form -->
+		<form action="https://google.com">
+			
+			<label for="full_name">Full Name:</label>
+			<input type="text" name="full_name" id="full_name" required autocomplete><br>
+
+			<label for="birth_date">Birth Date:</label>
+			<input type="date" name="birth_date" id="birth_date" required><br>
+
+			<label for="age">Age:</label>
+			<input type="number" name="age" id="age" required><br>
+
+			<label for="gender">Gender:</label>
+			<!-- dropdown menu -->
+			<select name="gender" id="gender">
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+				<option value="Other">Other</option>
+				<option value="Prefer Not to Say">Prefer Not to Say</option>
+			</select><br>
+
+			<label for="notes">Notes:</label>
+			<textarea name="notes" rows="5" id="notes"></textarea><br>
+
+			<label>New User:</label>
+				<input type="radio" name="new_user" id="user_type1" value="yes">
+				<label for="user_type1">Yes</label>
+				<input type="radio" name="new_user" id="user_type2" value="no">
+				<label for="user_type2">No</label><br>
+
+			<!-- checkbox -->
+			<label>Role:</label>
+				<input type="checkbox" name="role1" id="role1" value="developer">
+				<label for="role1">Developer</label>
+				<input type="checkbox" name="role2" id="role2" value="student">
+				<label for="role2">Student</label>
+				<input type="checkbox" name="role3" id="role3" value="manager">
+				<label for="role3">Manager</label><br>
+
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+
+		</form>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+#logo-png {
+    width: 48.63px;
+    height: 44px;
+    top: 12px;
+    left: 96.16px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.navbar {
+    background: #765C3D !important;
+}
+
+nav a {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    color: #F2D2AE !important;
+}
+
+#title {
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+#subtitle {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+#base {
+    background-color: #B59066 !important;
+    border-radius: 20px;
+    padding: 8px 24px 8px 24px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+#landing {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.59),
+        rgba(0, 0, 0, 0.59)
+    ), 
+    url("./images/backdrop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about h3 {
+    font-family: Montserrat;
+    font-size: 40px !important; /* Adjusted to match Figma Mockup */
+    font-weight: 600;
+    line-height: 48.76px;
+    color: #765C3D;
+}
+
+#about p {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    color: #765C3D;
+}
+
+#gallery-title {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.76px;
+    color: #765C3D;
+}
+
+#gallery-desc {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    color: #765C3D;
+}
+
+.albums {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.76px;
+    color: #765C3D;
+}
+
+.albums-desc {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    color: #765C3D;
+}
+
+#core-tool {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.76px;
+    color: #765C3D;
+}
+
+#other-tool {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.76px;
+    color: #765C3D;
+}
+
+.left-section {
+    flex: 1;
+    background-image: url('image/image1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.right-section {
+    flex: 1;
+    background-color: #fae6d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-form h2 {
+    font-size: 40px !important;
+    margin-top: 0;
+    color: #765C3D;
+    font-family: Montserrat;
+}
+
+.contact-form p {
+    font-family: Montserrat; /* Ensure the correct font-family */
+    font-size: 24px !important; /* Adjusted to match Figma Mockup */
+    color: #765C3D;
+    margin-bottom: 24px !important;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: rgb(181, 144, 102);
+    font-family: Montserrat !important; 
+    font-weight: 600 !important; /* Adjusted to match Figma Mockup */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(118, 92, 61) !important;
+    font-family: Montserrat !important; /* Adjusted to match Figma Mockup */
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #9e7540;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#contact {
+    display: flex;
+    min-height: 100vh;
+}

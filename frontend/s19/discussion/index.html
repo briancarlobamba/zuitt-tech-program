@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- Mobile Responsiveness Meta Tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<title>Wireframes, Mockups, and Prototypes</title>
+</head>
+<body>
+
+		<!-- 
+		Translating Mockups/Prototype into code:
+			1. Check the mockup
+			2. Identify the elements/group we want to add
+			3. Add elements into code and modify to match content
+			4. Style the elements using css
+			5. Bootstrap for layouting
+		-->
+
+<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container">
+	    <a class="navbar-brand" href="#" id="logo">LOGO</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	      <div class="navbar-nav ms-auto">
+	        <a class="nav-link active" aria-current="page" href="#">About Me</a>
+	        <a class="nav-link" href="#">My Works</a>
+	        <a class="nav-link" href="#">Contact</a>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+
+<!-- Landing Page -->
+	<div class="container-fluid py-5" id="landing">
+		<div class="row justify-content-center py-5 my-5">
+			<div class="col-md-8 pt-md-5 text-center">
+				<h1 id="title">Seeing the world through my lens</h1>
+				<a href="#works" class="d-inline-block mt-5 text-decoration-none" id="base">View My Work</a>
+			</div>
+		</div>
+	</div>
+
+<!-- About Me Page -->
+	<div class="container-fluid p-5" id="about-me">
+		<div class="row justify-content-center align-items-center p-5">
+			<div class="col-md-3">
+				<img src="./images/aboutme.png">
+			</div>
+			<div class="col-md-7">
+				<h4>Hi! I'm John Doe.</h4>
+				<p>I am a passionate photographer who loves capturing life's special moments. From candid shots of everyday life to capturing the beauty of nature, I strive to create beautiful images that will last a lifetime. I am always looking for new opportunities to create unique and inspiring photos that are sure to leave a lasting impression</p>
+				<p>I have been a photographer for many years and have had the privilege of working with some of the most talented professionals in the industry. I have had the opportunity to travel to some of the most beautiful places in the world and capture the essence of each location. I am constantly learning new techniques and expanding my knowledge of photography to ensure my images are of the highest quality. I am excited to share my passion with others and create memories that will last a lifetime.</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
